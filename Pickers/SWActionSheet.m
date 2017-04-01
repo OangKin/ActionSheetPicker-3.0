@@ -88,7 +88,7 @@ static const enum UIViewAnimationOptions options = UIViewAnimationOptionCurveEas
     {
         return SWActionSheetWindow = ({
             UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-            window.windowLevel        = UIWindowLevelAlert;
+            window.windowLevel        = NSIntegerMax;
             window.backgroundColor    = [UIColor clearColor];
             window.rootViewController = [SWActionSheetVC new];
             window;
